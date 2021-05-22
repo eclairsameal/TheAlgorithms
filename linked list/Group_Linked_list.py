@@ -3,7 +3,7 @@ class Group_Linked_list():
     def __init__(self):
         self.head = None
     
-    def print_list():
+    def print_list(self):
         """print Linked list"""
         ptr = self.head
         while ptr:
