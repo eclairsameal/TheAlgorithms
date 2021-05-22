@@ -9,3 +9,9 @@ class Group_Linked_list():
         while ptr:
             print(ptr.name)
             ptr = ptr.next
+    
+    def add_beginning(self, new_name):
+        """將新的節點插入第一個節點"""
+        new_group = g.Group(new_name)
+        new_group.next = self.head
+        self.head = new_group
