@@ -1,7 +1,7 @@
-class Group():
+class Group:
   """節點"""
   def __init__(self, name = None):
-    self.data = name
+    self.name = name
     self.next = None
 
 # 實作節點
@@ -19,5 +19,5 @@ ptr = illumina # 建立指標節點
 
 # 遊歷節點
 while ptr:
-  print(ptr)
+  print(ptr.name)
   ptr = ptr.next
