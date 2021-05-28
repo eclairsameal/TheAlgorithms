@@ -28,6 +28,18 @@ group_linked.print_list()
 新增 "noctchill" 到最後一個節點
 """
 print("新增 noctchill 到第一個節點後的Linked list: ")
-new_group_linked = gll.Group_Linked_list()    # 宣告 Group_Linked_list 變數
-new_group_linked.add_ending("noctchill")
-new_group_linked.print_list()
+group_linked.add_ending("noctchill")
+group_linked.print_list()
+
+# 宣告新的Group_Linked_list變數來測試Linked list為空的狀況
+# new_group_linked = gll.Group_Linked_list()    
+# new_group_linked.add_ending("noctchill")
+# new_group_linked.print_list()
+
+"""
+---------- 實作 add_ending(self, new_name) ----------
+新增 "SHHis" 到L'Antica後
+"""
+print("新增 SHHis 到L'Antica後: ")
+group_linked.add_between(antica, "SHHis")
+group_linked.print_list()
