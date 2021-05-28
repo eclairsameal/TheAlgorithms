@@ -13,5 +13,13 @@ antica.next = alstroe    # 將Group節點連接一起
 alstroe.next = hokako
 
 group_linked.head.next = antica    # 將新的Group節點串列接到head後
-
+print("初始的Linked list: ")
 group_linked.print_list()    # 印出 Group_Linked_list 的所有數值
+
+"""
+---------- 實作add_beginning(self, new_name) ----------
+新增 "Straylight" 到第一個節點
+"""
+print("新增 Straylight 到第一個節點後的Linked list: ")
+group_linked.add_beginning("Straylight")
+group_linked.print_list()
