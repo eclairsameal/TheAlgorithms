@@ -22,7 +22,7 @@ class Group_Linked_list():
         if self.head == None:        # 如果為True的話，表示Linked list是空的
             self.head = new_group    # 直接將head指向新的節點
             return
-        last_ptr = self.head         # 先將最後節點的指標指向hand
+        last_ptr = self.head         # 先將最後節點的指標指向head
         while last_ptr.next:         # 移動最後節點的指標直到Linked list的最後
             last_ptr = last_ptr.next
         last_ptr.next = new_group    # 將最後節點的next 指向新的節點
@@ -35,3 +35,17 @@ class Group_Linked_list():
         new_group = g.Group(new_name)    # 先建立新的節點
         new_group.next = pre_node.next   # 新的節點先指向後面的節點
         pre_node.next = new_group        # 將前節點的next指向新的節點
+    def remove_node(self, rmname):
+        ptr = self.head    # 暫時指向Linked list的指標
+        if ptr:
+            if ptr.name == rmname:            # 想刪除的節點是head
+                self.head = self.head.next    # 直接將head指向head的下一個節點
+                return
+        while ptr:
+            if ptr.name == rmname:
+                break
+            prev = ptr        # 設一個前一節點的指標
+            ptr = ptr.next
+        if ptr == None:       # 當ptr為Linked list的末端
+            return            # 找不到刪除的資料所以返回
+        prev.next = ptr.next  # 找到想刪除的節點所以將前一節點指向下一節點
