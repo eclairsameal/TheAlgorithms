@@ -43,3 +43,14 @@ group_linked.print_list()
 print("新增 SHHis 到L'Antica後: ")
 group_linked.add_between(antica, "SHHis")
 group_linked.print_list()
+
+"""
+---------- 實作 remove_node(self, rmname) ----------
+新增 "ml" 到 ALSTROEMERIA 後，再刪除 "ml"
+"""
+print("新增 ml 到 ALSTROEMERIA 後: ")
+group_linked.add_between(alstroe, "ml")
+group_linked.print_list()
+print("刪除 ml: ")
+group_linked.remove_node("ml")
+group_linked.print_list()
