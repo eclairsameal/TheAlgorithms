@@ -1,8 +1,7 @@
 # linked list
 
-## Singly linked list
+[Singly Linked List](https://github.com/eclairsameal/TheAlgorithms-Python/blob/main/linked%20list/Singly%20Linked%20List.md)
 
 
-https://github.com/eclairsameal/TheAlgorithms-Python/blob/main/linked%20list/Group(one_file).py
-
+[Circle Linked List](https://github.com/eclairsameal/TheAlgorithms-Python/blob/main/linked%20list/Circle%20Linked%20List.md)
 
