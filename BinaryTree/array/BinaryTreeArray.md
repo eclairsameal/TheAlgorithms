@@ -15,7 +15,7 @@
 
 **Example**
 使用number_list 裡的數字來建立二元樹。
-```python=
+```python
 def createBinaryTree(tree, data):
     for i in range(len(data)):
         tree_index = 0    # 索引 = 0 代表根節點
