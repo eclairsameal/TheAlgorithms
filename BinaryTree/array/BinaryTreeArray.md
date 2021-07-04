@@ -13,7 +13,7 @@
 
 稀缺二元樹(缺了很多節點的二元樹): 使用Array來儲存二元樹資料結構，會浪費很多儲存空間。 
 
-#### Example
+#### Example:
 
 使用number_list 裡的數字來建立二元樹。
 ```python
@@ -40,7 +40,7 @@ for i, t in enumerate(binary_tree_array):
     print("index[{}] = {}".format(i, t)) 
 ```
 
-**Result**
+**Result:**
 
 ```
 10 -> [10, 0, 0, 0, 0, 0, 0]
